@@ -2417,7 +2417,7 @@ button:active,
 
 #main>section.dark {
 	color: #ddd;
-	color: rgba(255, 255, 255, 0.75);
+	color: rgb(255, 255, 255);
 }
 
 #main>section.dark h2,
@@ -2425,11 +2425,13 @@ button:active,
 #main>section.dark h4,
 #main>section.dark h5,
 #main>section.dark h6 {
+	font-weight: bolder;
 	color: inherit;
 }
 
 #main>section.dark strong {
 	color: #fff;
+	font-weight: bolder;
 	border-color: inherit;
 }
 
@@ -2450,7 +2452,7 @@ button:active,
 
 #main>section.one {
 	background-color: #81918E;
-	background-image: url("../../images/banner.jpg");
+	background-image: url("../../images/beach1.jpeg");
 }
 
 #main>section.two {
