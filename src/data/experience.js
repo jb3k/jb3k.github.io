@@ -4,26 +4,19 @@ export const experience = [
     organization: 'Two Percent',
     role: 'Cofounder',
     description:
-      'Product strategy, leadership development, research systems, simulation design, and behavioral measurement.',
+      'Product strategy, Leadership development, simulation design, and behavioral measurement.',
   },
   {
     id: 'uc-irvine-mba',
     organization: 'UC Irvine Paul Merage School of Business',
     role: 'MBA Candidate, Class of 2027',
     description:
-      'Focused on product strategy, corporate strategy, leadership, and entrepreneurship.',
-  },
-  {
-    id: 'software-engineering',
-    organization: 'Software Engineering',
-    role: 'Full-Stack Application Development',
-    description:
-      'Experience building full-stack applications and digital products.',
+      'Focused on Marketing strategy, Corporate strategy, and Entrepreneurship.',
   },
   {
     id: 'cybersecurity-it',
-    organization: 'Cybersecurity and IT',
-    role: 'Security and Infrastructure Support',
+    organization: 'Superior Communications',
+    role: 'Network Analyst',
     description:
       'Supported security infrastructure, SIEM transition, budgeting constraints, and cyber-insurance requirements.',
   },

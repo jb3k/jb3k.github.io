@@ -1,10 +1,10 @@
 export const site = {
   name: 'JB Kam',
   title: 'AI Systems, Product Strategy, and Research',
-  email: 'mailto:hello@example.com',
+  email: 'jbkam@uci.edu',
   githubUrl: 'https://github.com/jb3k',
   linkedinUrl: 'https://www.linkedin.com/in/justin-j-b-kam-4105961a5/',
-  resumeUrl: '/images/AA JB Resume.pdf',
+  resumeUrl: '/images/Resume.pdf',
   hero: {
     headline: 'I build AI-enabled systems for research, learning, and decision-making.',
     summary:
