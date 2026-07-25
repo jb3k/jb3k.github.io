@@ -256,7 +256,7 @@ body {
 .timeline {
   position: relative;
   display: grid;
-  gap: 1.25rem;
+  gap: 1.1rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -282,12 +282,167 @@ body {
   position: absolute;
   left: 0;
   top: 0.45rem;
-  width: 0.95rem;
-  height: 0.95rem;
+  width: 1rem;
+  height: 1rem;
   border: 3px solid #fffaf2;
   border-radius: 50%;
-  background: #6b7f4f;
-  box-shadow: 0 0 0 1px #6b7f4f;
+  background:
+    radial-gradient(circle at 34% 30%, #ffffff 0 18%, transparent 19%),
+    radial-gradient(circle at 67% 66%, rgba(70, 87, 53, 0.2) 0 8%, transparent 9%),
+    #ffffff;
+  box-shadow:
+    0 0 0 1px #6b7f4f,
+    0 5px 12px rgba(38, 32, 24, 0.12);
+}
+
+.experience-section {
+  background:
+    radial-gradient(ellipse at 14% 18%, rgba(216, 224, 199, 0.34), transparent 34%),
+    #fffaf2;
+}
+
+.experience-sticky {
+  align-self: start;
+}
+
+.experience-intro > div {
+  margin-bottom: 0;
+}
+
+.experience-timeline {
+  counter-reset: experience;
+}
+
+.experience-card {
+  border: 1px solid transparent;
+  border-radius: var(--radius-card);
+  padding: 1.1rem 1.15rem 1.1rem 2.65rem;
+  transition:
+    background var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition),
+    transform var(--transition);
+}
+
+.experience-card::before {
+  left: 1rem;
+  top: 1.42rem;
+  transition:
+    box-shadow var(--transition),
+    transform var(--transition);
+}
+
+.experience-card.is-active {
+  border-color: rgba(107, 127, 79, 0.28);
+  background: rgba(247, 243, 236, 0.78);
+  box-shadow: 0 16px 35px rgba(38, 32, 24, 0.07);
+  transform: translateX(-0.18rem);
+}
+
+.experience-card.is-active::before {
+  transform: scale(1.08);
+  box-shadow:
+    0 0 0 1px #465735,
+    0 0 0 6px rgba(216, 224, 199, 0.72),
+    0 8px 16px rgba(38, 32, 24, 0.16);
+}
+
+.putting-path {
+  position: relative;
+  display: none;
+  margin-top: 1.1rem;
+  aspect-ratio: 420 / 620;
+  max-height: 38rem;
+  overflow: hidden;
+  border: 1px solid #ded7cb;
+  border-radius: var(--radius-card);
+  background:
+    linear-gradient(145deg, rgba(216, 224, 199, 0.7), rgba(255, 250, 242, 0.86)),
+    #edf2e3;
+  box-shadow: 0 18px 45px rgba(38, 32, 24, 0.07);
+}
+
+.putting-path svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.putting-line,
+.putting-contour {
+  fill: none;
+  stroke-linecap: round;
+}
+
+.putting-line {
+  stroke: #465735;
+  stroke-width: 5;
+  stroke-dasharray: 0.01 0.055;
+  opacity: 0.74;
+}
+
+.putting-contour {
+  stroke: rgba(70, 87, 53, 0.2);
+  stroke-width: 2;
+}
+
+.putting-marker {
+  fill: #fffaf2;
+  stroke: rgba(70, 87, 53, 0.72);
+  stroke-width: 2;
+  transition:
+    fill var(--transition),
+    r var(--transition),
+    stroke var(--transition);
+}
+
+.putting-marker.is-active {
+  fill: #ffffff;
+  r: 10px;
+  stroke: #465735;
+}
+
+.putting-flag line {
+  stroke: #465735;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.putting-flag path {
+  fill: #9f4c42;
+  opacity: 0.82;
+}
+
+.golf-ball {
+  position: absolute;
+  display: grid;
+  width: 1.55rem;
+  height: 1.55rem;
+  place-items: center;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition:
+    left 120ms linear,
+    top 120ms linear;
+}
+
+.golf-ball span {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(70, 87, 53, 0.28);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 34% 28%, #ffffff 0 16%, transparent 17%),
+    radial-gradient(circle at 64% 62%, rgba(70, 87, 53, 0.18) 0 7%, transparent 8%),
+    radial-gradient(circle at 38% 70%, rgba(70, 87, 53, 0.14) 0 6%, transparent 7%),
+    #ffffff;
+  box-shadow:
+    0 8px 16px rgba(38, 32, 24, 0.18),
+    inset -5px -6px 10px rgba(222, 215, 203, 0.72);
+}
+
+.golf-ball.is-static {
+  transition: none;
 }
 
 @media (max-width: 767px) {
@@ -297,6 +452,40 @@ body {
 
   .ai-card {
     min-height: auto;
+  }
+
+  .experience-section {
+    background: #fffaf2;
+  }
+
+  .experience-card {
+    padding-right: 0;
+  }
+
+  .experience-card.is-active {
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .experience-sticky {
+    position: sticky;
+    top: 6rem;
+  }
+
+  .putting-path {
+    display: block;
+  }
+
+  .experience-timeline {
+    gap: 1.35rem;
+    padding-top: clamp(13.5rem, 19vw, 16rem);
+    padding-bottom: 4rem;
+  }
+
+  .experience-card {
+    min-height: 11rem;
   }
 }
 
@@ -315,6 +504,10 @@ body {
   }
 
   .card:hover {
+    transform: none;
+  }
+
+  .experience-card.is-active {
     transform: none;
   }
 }
