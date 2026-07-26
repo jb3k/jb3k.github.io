@@ -18,24 +18,6 @@ export const aiSystems = [
     tags: ['AI Agents', 'Research', 'Ontology', 'Python', 'Knowledge Architecture'],
   },
   {
-    id: 'scientific-research-extraction-agent',
-    title: 'Scientific Research Extraction Agent',
-    status: 'Active',
-    description:
-      'A specification-driven AI workflow that processes complete academic publications and extracts structured scientific information while minimizing unsupported inference.',
-    input: 'Complete academic publications',
-    process: [
-      'Publication validation',
-      'Metadata extraction',
-      'Knowledge-object extraction',
-      'Findings extraction',
-      'Relationship extraction',
-      'Output validation',
-    ],
-    output: 'Standardized research extraction files',
-    tags: ['AI Workflow', 'Scientific Research', 'Structured Extraction', 'Validation', 'Data Modeling'],
-  },
-  {
     id: 'scientific-knowledge-organization-agent',
     title: 'Scientific Knowledge Organization Agent',
     status: 'Active',
@@ -54,6 +36,37 @@ export const aiSystems = [
     output: 'Relational scientific knowledge base',
     tags: ['AI Agent', 'Data Engineering', 'Knowledge Base', 'Canonicalization', 'Governance'],
   },
+  {
+  id: 'health-analytics-agent',
+  title: 'Health Analytics Agent',
+  status: 'In Development',
+  description:
+    'An AI-assisted personal health intelligence system that consolidates wearable and body composition data into a longitudinal health database, tracks progress toward wellness goals, and generates structured weekly health insights.',
+  input:
+    'Apple Health export and personal health goals',
+  process: [
+    'Health data ingestion',
+    'Data normalization',
+    'Daily metric aggregation',
+    'Longitudinal trend analysis',
+    'Goal progress evaluation',
+    'Evidence-based health analysis',
+    'Weekly report generation',
+    'Dashboard and workbook update',
+  ],
+  output:
+    'Interactive health dashboard nd personalized weekly health summary with actionable recommendations',
+  tags: [
+    'Applied AI',
+    'Health Analytics',
+    'Data Pipeline',
+    'Python',
+    'Apple Health',
+    'Wearables',
+    'Automation',
+    'Decision Support',
+  ],
+},
   {
     id: 'manager-development-study-system',
     title: 'Manager Development Study System',
@@ -95,7 +108,7 @@ export const aiSystems = [
   {
     id: 'manager-job-description-analysis',
     title: 'Manager Job Description Analysis',
-    status: 'Planned',
+    status: 'Completed',
     description:
       'An AI-assisted research pipeline for identifying the capabilities and skills most frequently requested in manager job descriptions.',
     input: 'Manager job descriptions across business functions',

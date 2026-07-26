@@ -14,7 +14,6 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <PuttingLineDivider />
         <CurrentFocus />
         <PuttingLineDivider reverse compact />
         <AISystems />
@@ -25,7 +24,6 @@ export default function App() {
         <PuttingLineDivider compact />
         <About />
       </main>
-      <PuttingLineDivider reverse compact />
       <Footer />
     </>
   );
