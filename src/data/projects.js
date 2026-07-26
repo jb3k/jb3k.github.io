@@ -1,0 +1,88 @@
+export const projects = [
+  {
+    id: 'two-percent',
+    title: 'Two Percent',
+    summary: 'Leadership development through realistic simulation and behavioral measurement.',
+    description:
+      'A product platform for helping managers practice high-stakes workplace decisions, receive structured feedback, and improve through repeated short-form simulations.',
+    role: 'Cofounder, product strategy, research design, system architecture',
+    status: 'Active',
+    tags: ['Leadership Development', 'Simulation', 'Product Strategy', 'Research'],
+    image: null,
+    githubUrl: null,
+    liveUrl: null,
+    featured: true,
+  },
+  {
+    id: 'healthkit-platform',
+    title: 'HealthKit OS Platform',
+    summary: 'A platform for managing and analyzing health data across different devices and applications.',
+    description:
+      'A system for collecting, storing, and analyzing health data from various sources, providing insights and recommendations for users to improve their health and wellness.',
+    role: 'Product designer and system architect',
+    status: 'Pilot',
+    tags: ['Health Data', 'Analytics', 'Platform Development', 'User Experience'],
+    image: null,
+    githubUrl: null,
+    liveUrl: null,
+    featured: false,
+  },
+  {
+    id: 'manager-pilot-study-platform',
+    title: 'Manager Pilot Study Platform',
+    summary: 'A randomized study workflow for manager development research.',
+    description:
+      'Study infrastructure for consent, assignment, baseline assessment, intervention conditions, lock periods, repeated testing, and structured data export.',
+    role: 'Product builder and research operator',
+    status: 'Pilot',
+    tags: ['Research Operations', 'React', 'Node', 'Analytics'],
+    image: null,
+    githubUrl: null,
+    liveUrl: null,
+    featured: false,
+  },
+  {
+    id: 'mba-year-1-learning-agent',
+    title: 'MBA Year 1 Learning Agent',
+    summary: 'A personal knowledge system for retrieving and reinforcing MBA concepts.',
+    description:
+      'A learning workflow for organizing course materials, connecting frameworks across classes, generating retrieval practice, and identifying weak areas.',
+    role: 'AI learning system designer',
+    status: 'In Development',
+    tags: ['AI Tutor', 'MBA', 'Knowledge Management', 'Retrieval Practice'],
+    image: null,
+    githubUrl: null,
+    liveUrl: null,
+    featured: false,
+  },
+    {
+    id: 'eureka-bearings',
+    title: 'Eureka Bearings',
+    summary: 'Built web application for a client to showcase their products and provide information to potential customers.',
+    description:
+      'A full-stack project that involved designing and developing a web application for a client in the manufacturing industry. The application allows users to browse products, view specifications, and contact the company for inquiries.',
+    role: 'Full-stack software engineer',
+    status: 'Completed',
+    tags: ['JavaScript', 'React', 'Full Stack', 'AWS'],
+    image: '/images/pic2.png',
+    githubUrl: null,
+    liveUrl: 'https://www.eurekabearing.com/',
+    featured: false,
+  },
+  {
+    id: 'stocky',
+    title: 'StockY',
+    summary: 'Archived software engineering project inspired by marketplace products.',
+    description:
+      'A full-stack bootcamp project focused on marketplace interaction patterns, product listing flows, and responsive front-end implementation.',
+    role: 'Full-stack software engineer',
+    status: 'Archived',
+    tags: ['JavaScript', 'React', 'Full Stack', 'App Academy'],
+    image: '/images/pic1.png',
+    githubUrl: null,
+    liveUrl: null,
+    featured: false,
+  },
+];
+
+// To add another project, copy one object above and update id, title, summary, description, role, status, tags, image, githubUrl, liveUrl, and featured.
