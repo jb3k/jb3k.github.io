@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section id="about" className="section-pad">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
-        <SectionHeading eyebrow="About" title="A coherent path into AI-enabled product work" />
+        <SectionHeading eyebrow="About" title="My Unconventional Journey" />
         <div className="card p-6 sm:p-8">
           <div className="grid gap-6 text-lg leading-8 text-muted">
             {site.about.map((paragraph) => (
