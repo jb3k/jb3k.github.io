@@ -4,13 +4,13 @@ export const site = {
   email: 'mailto:jbkam@uci.edu',
   githubUrl: 'https://github.com/jb3k',
   linkedinUrl: 'https://www.linkedin.com/in/justin-j-b-kam-4105961a5/',
-  twoPercentUrl: '#projects',
+  twoPercentUrl: 'https://www.twopercentgames.com/',
   resumeUrl: '/images/Resume.pdf',
   hero: {
     eyebrow: 'JB Kam',
-    headline: 'Building AI systems that transform research into better decisions.',
+    headline: 'Building systems that help people make better decisions.',
     summary:
-      'MBA candidate, product builder, and cofounder working across leadership development, applied AI, research infrastructure, and product strategy.',
+      'I combine business strategy, technology, and research to design products that improve learning, leadership, and organizational performance.',
     links: [
       {
         id: 'linkedin',
@@ -32,11 +32,11 @@ export const site = {
       },
     ],
   },
-  about: [
-    'My work sits at the intersection of research, analytics, technology, and business strategy. I started by turning messy markets and operational questions into usable intelligence, then moved deeper into software and product building as a way to make that intelligence interactive, repeatable, and useful.',
-    'That path now informs how I build AI-enabled systems for leadership development, learning, and decision support. Athletics and coaching shaped how I think about preparation, feedback, measurement, and behavior change; software engineering gives me the tools to turn those ideas into products people can actually use.',
-  ],
+about: [
+  "I've had a fairly unconventional career path that's given me a broad perspective on how businesses grow and operate. I began as a Division I student-athlete, where I learned how to lead under pressure, adapt quickly, and work toward long-term goals. After graduation, I worked in commercial real estate, using market research and analytics to help clients make strategic decisions. That experience sparked a deeper interest in technology, leading me through software engineering and into IT and cybersecurity, where I developed a stronger foundation in systems thinking, problem solving, and cross-functional collaboration.",
+  "Today, I'm building on that foundation as an MBA candidate at UC Irvine's Merage School of Business, studying finance, strategy, and marketing while exploring how AI can improve learning, leadership development, and organizational decision making. What ties my experiences together is a fascination with building systems that turn information into action. Whether through product strategy, research, or AI-powered tools, I'm motivated by creating solutions that help people make better decisions, continuously improve, and bring ambitious ideas to life.",
+],
   footerNote:
-    'Built for clear thinking, practical systems, and better decisions.',
+    'If no can, KAM.',
 };
 // Update links, Hero copy, biography paragraphs, and footer text here.
