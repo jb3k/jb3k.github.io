@@ -2,7 +2,30 @@
   "hash": "a2d211bb",
   "configHash": "5e2348bd",
   "lockfileHash": "3bf29e0f",
-  "browserHash": "307d1186",
-  "optimized": {},
-  "chunks": {}
+  "browserHash": "1c2ec248",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "64628f24",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "5e60f0d9",
+      "needsInterop": true
+    },
+    "lucide-react": {
+      "src": "../../node_modules/lucide-react/dist/esm/lucide-react.js",
+      "file": "lucide-react.js",
+      "fileHash": "e5ab7c65",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-BHL7OXLS": {
+      "file": "chunk-BHL7OXLS.js"
+    }
+  }
 }

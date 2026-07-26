@@ -5,7 +5,7 @@ export const site = {
   githubUrl: 'https://github.com/jb3k',
   linkedinUrl: 'https://www.linkedin.com/in/justin-j-b-kam-4105961a5/',
   twoPercentUrl: 'https://www.twopercentgames.com/',
-  resumeUrl: '/images/Resume.pdf',
+  resumeUrl: '/Resume/Resume.pdf',
   hero: {
     eyebrow: 'JB Kam',
     headline: 'Building systems that help people make better decisions.',
