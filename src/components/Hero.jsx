@@ -1,20 +1,25 @@
-import { ArrowDown, Github, Linkedin } from 'lucide-react';
+import { ArrowDown, ArrowUpRight } from 'lucide-react';
 import { site } from '../data/site.js';
 
+const heroBackground = '/images/hero-golf-course.png';
+
 export default function Hero() {
+  const heroLinks = site.hero.links
+    .map((link) => ({ ...link, url: site[link.urlKey] }))
+    .filter((link) => link.url);
+
   return (
-    <section id="top" className="section-pad relative overflow-hidden border-b border-line">
-      <div className="absolute inset-0 subtle-grid" aria-hidden="true" />
-      <div className="relative mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
-        <div className="max-w-4xl">
-          <p className="eyebrow">Product builder · Research systems · Applied AI</p>
-          <h1 className="mt-4 max-w-4xl text-5xl font-semibold leading-tight tracking-normal text-ink sm:text-6xl lg:text-7xl">
+    <section id="top" className="hero" style={{ backgroundImage: `url(${heroBackground})` }}>
+      <div className="mx-auto max-w-7xl px-4 pt-20 sm:px-6 sm:pt-24 lg:px-8 lg:pt-28">
+        <div className="hero-copy">
+          <p className="eyebrow">{site.hero.eyebrow}</p>
+          <h1 className="mx-auto mt-5 max-w-5xl text-4xl font-semibold leading-[1.06] sm:text-6xl lg:text-7xl">
             {site.hero.headline}
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-muted sm:text-xl">
+          <p className="hero-summary mx-auto mt-7 max-w-3xl text-lg leading-8 sm:text-xl">
             {site.hero.summary}
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-9 flex flex-wrap justify-center gap-3">
             <a className="button-primary" href="#ai-systems">
               View AI Systems
             </a>
@@ -22,25 +27,30 @@ export default function Hero() {
               <ArrowDown size={18} aria-hidden="true" />
               View Current Work
             </a>
-            <a className="button-quiet" href={site.githubUrl} target="_blank" rel="noreferrer">
-              <Github size={18} aria-hidden="true" />
-              GitHub
-            </a>
-            <a className="button-quiet" href={site.linkedinUrl} target="_blank" rel="noreferrer">
-              <Linkedin size={18} aria-hidden="true" />
-              LinkedIn
-            </a>
           </div>
         </div>
 
-        <div className="system-map" aria-hidden="true">
-          <div className="map-node map-node-a">Research</div>
-          <div className="map-node map-node-b">Agents</div>
-          <div className="map-node map-node-c">Simulation</div>
-          <div className="map-node map-node-d">Decision Support</div>
-          <div className="map-line map-line-a" />
-          <div className="map-line map-line-b" />
-          <div className="map-line map-line-c" />
+        <div className="hero-link-grid" aria-label="Featured links">
+          {heroLinks.map((link) => {
+            const isExternal = link.url.startsWith('http');
+
+            return (
+              <a
+                key={link.id}
+                className="hero-link-card"
+                href={link.url}
+                target={isExternal ? '_blank' : undefined}
+                rel={isExternal ? 'noreferrer' : undefined}
+                aria-label={`${link.label}: ${link.description}${isExternal ? ' (opens in a new tab)' : ''}`}
+              >
+                <span>
+                  <strong>{link.label}</strong>
+                  <small>{link.description}</small>
+                </span>
+                <ArrowUpRight size={18} aria-hidden="true" />
+              </a>
+            );
+          })}
         </div>
       </div>
     </section>

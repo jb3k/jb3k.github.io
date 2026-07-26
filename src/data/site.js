@@ -1,14 +1,36 @@
 export const site = {
   name: 'JB Kam',
   title: 'AI Systems, Product Strategy, and Research',
-  email: 'jbkam@uci.edu',
+  email: 'mailto:jbkam@uci.edu',
   githubUrl: 'https://github.com/jb3k',
   linkedinUrl: 'https://www.linkedin.com/in/justin-j-b-kam-4105961a5/',
+  twoPercentUrl: '#projects',
   resumeUrl: '/images/Resume.pdf',
   hero: {
-    headline: 'I build AI-enabled systems for research, learning, and decision-making.',
+    eyebrow: 'JB Kam',
+    headline: 'Building AI systems that transform research into better decisions.',
     summary:
-      'MBA candidate, product builder, and cofounder developing leadership simulations, research infrastructure, and practical AI workflows.',
+      'MBA candidate, product builder, and cofounder working across leadership development, applied AI, research infrastructure, and product strategy.',
+    links: [
+      {
+        id: 'linkedin',
+        label: 'LinkedIn',
+        description: 'Professional experience and network',
+        urlKey: 'linkedinUrl',
+      },
+      {
+        id: 'github',
+        label: 'GitHub',
+        description: 'Projects, systems, and code',
+        urlKey: 'githubUrl',
+      },
+      {
+        id: 'two-percent',
+        label: 'Two Percent',
+        description: 'Leadership-development startup',
+        urlKey: 'twoPercentUrl',
+      },
+    ],
   },
   about: [
     'My work sits at the intersection of research, analytics, technology, and business strategy. I started by turning messy markets and operational questions into usable intelligence, then moved deeper into software and product building as a way to make that intelligence interactive, repeatable, and useful.',
@@ -17,5 +39,4 @@ export const site = {
   footerNote:
     'Built for clear thinking, practical systems, and better decisions.',
 };
-
-// Update links, hero copy, biography paragraphs, and footer text here.
+// Update links, Hero copy, biography paragraphs, and footer text here.
